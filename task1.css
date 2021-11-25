@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+header{
+    height: 100px;
+    background-color: orange;
+}
+main{
+    display: flex;
+    width: 960px;
+    margin: 50px auto;
+}
+.step-box{
+    width: 300px;
+    background-color: #eee;
+    margin-right: 30px;
+    padding: 10px;
+    /* step-boxが見えるように他に影響を与えないrelative */
+    position: relative;
+
+}
+.step-num{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ff9a4b;
+    color: white;
+}
+.step-image1{
+    height: 150px;
+    background-image: url(flow01.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.step-image2{
+    height: 150px;
+    background-image: url(flow02.png);
+    background-position: bottom;
+    background-size: cover;
+}
+.step-image3{
+    height: 150px;
+    background-image: url(flow03.png);
+    background-position: bottom;
+    background-size: cover;
+}
+footer{
+    height: 50px;
+    background-color:#aaa;
+}
+
+
+.title{
+    margin: 15px 0px 5px;
+}
+
+@media screen and (max-width: 425px){
+    body{
+        font-family:"ヒラギノ丸ゴ Pro W4"
+    }
+    main{
+        display: block;
+        width: 100%;
+    }
+    
+    .step-box{
+        width: 100%;
+        margin:30px;
+    }
+
+    header{
+        height: 100px;
+        width: 100%;
+    }
+
+
+}
